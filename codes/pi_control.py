@@ -116,7 +116,7 @@ while True:
                 fluc = 0.3
                 start= row
                 loop_val = loop_value(start, end, fluc)
-                single_channel_loop(channel_array[i], dt, loop_val)
+                single_channel_loop(channel_array[i], dt, give_single_channel, loop_val)
                 i = i + 1
             last_modified_time_Annealing = os.stat(FileName_Annealing).st_mtime
 
