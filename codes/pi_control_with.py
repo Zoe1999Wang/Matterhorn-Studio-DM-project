@@ -86,7 +86,7 @@ def single_channel_loop(i,second,func,loop_value):
     i=max(1,i)
     i=min(17,i)
     for k in range(len(loop_value)):
-        timer = Timer(second,func,[i,0,loop_value[k]])
+        timer = Timer(second,func,[i,loop_value[k]])
         timer.start()
         timer.join()
 
